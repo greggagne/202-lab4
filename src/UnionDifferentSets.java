@@ -18,13 +18,6 @@ public class UnionDifferentSets {
 		s2.add("donuts");
 		
 		Set<String> s3 = s1.union(s2);
-		
-		Iterator <String> itr = s3.iterator();
-		
-		while (itr.hasNext()) {
-			System.out.println(itr.next());
-		}
-
 	}
 
 }
