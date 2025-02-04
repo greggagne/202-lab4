@@ -55,14 +55,14 @@ public class TestArraySet {
 	public void testRemove() {
 		Set<String> set = new ArraySet<>();
 
-		set.remove("Apple");
+		assertFalse(set.remove("Apple"));
 
 		assertEquals(0,set.getSize());
 
 		set.add("Apple");
 		assertEquals(1,set.getSize());
 
-		set.remove("Apple");
+		assertTrue(set.remove("Apple"));
 		assertEquals(0,set.getSize());
 	}
 

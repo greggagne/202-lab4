@@ -7,8 +7,8 @@ import java.util.Iterator;
 public class UnionDifferentSets {
 
 	public static void main(String[] args) {
-		Set<String> s1 = new ArraySet<String>();
-		Set<String> s2 = new ListSet<String>();
+		Set<String> s1 = new ArraySet<>();
+		Set<String> s2 = new ListSet<>();
 		
 		s1.add("apples");
 		s1.add("cherries");

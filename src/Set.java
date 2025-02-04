@@ -1,10 +1,8 @@
-import java.util.Iterator;
-
 /** 
  * An interface for a set ADT.
  *
  * A set is an unordered collection of elements 
- * that may not contain duplicates.
+ * that does not contain duplicates.
  *
  * @author Greg Gagne 
  */
@@ -31,15 +29,17 @@ public interface Set<T>
     public boolean contains(T element);
 
     /**
-     * Returns the size (in elements) in the set.
+     * Returns the number of elements in the set.
      */
     public int getSize();
 
 
     /**
      * Removes the specified element from the set.
+     *
+     * Returns true if the element was removed, false otherwise.
      */
-    public void remove(T element);
+    public boolean remove(T element);
 
     /** 
      * Creates a new set that combines the contents if this
@@ -56,14 +56,18 @@ public interface Set<T>
      * Creates a new set that contains the objects that occur
      * in both this set and anotherSet.
      *
+     * Both this set and anotherSet are unchanged.
+     *
      * Returns the new set.
      */
     public Set<T> intersection(Set<T> anotherSet);
     
     /**
-     * Creates a new set containing the objects that would
+     * Creates a new set containing the objects that are
      * left in this set after removing those that also 
      * occur in anotherSet.
+     *
+     * Both this set and anotherSet are unchanged.
      *
      * Returns the new set.
      */

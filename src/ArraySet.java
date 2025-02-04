@@ -1,5 +1,11 @@
-public class ArraySet<T> implements Set<T> {
+public class ArraySet<T> implements Set<T>{
 
+    public ArraySet(int size) {
+    }
+
+    public ArraySet() {
+
+    }
     @Override
     public void add(T element) {
 
@@ -21,8 +27,8 @@ public class ArraySet<T> implements Set<T> {
     }
 
     @Override
-    public void remove(T element) {
-
+    public boolean remove(T element) {
+        return false;
     }
 
     @Override

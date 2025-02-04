@@ -7,7 +7,7 @@ public class TestListSet {
 
 	@Test
 	public void testAdd() {
-		Set<String> set = new ListSet<String>();
+		Set<String> set = new ListSet<>();
 
 		set.add("Apple");
 		set.add("Banana");
@@ -25,7 +25,7 @@ public class TestListSet {
 	public void testAddAll() {
 		String[] letters = {"A","B","C","D","E","F"};
 
-		Set<String> set = new ListSet<String>();
+		Set<String> set = new ListSet<>();
 		set.addAll(letters);
 
 		assertEquals(6,set.getSize());
@@ -33,7 +33,7 @@ public class TestListSet {
 
 	@Test
 	public void testContains() {
-		Set<String> set = new ListSet<String>();
+		Set<String> set = new ListSet<>();
 
 		assertFalse(set.contains("Apple"));
 
@@ -44,7 +44,7 @@ public class TestListSet {
 
 	@Test
 	public void testRemove() {
-		Set<String> set = new ListSet<String>();
+		Set<String> set = new ListSet<>();
 
 		set.remove("Apple");
 
@@ -59,13 +59,13 @@ public class TestListSet {
 
 	@Test
 	public void testUnion() {
-		Set<Integer> s1 = new ListSet<Integer>();
-		Set<Integer> s2 = new ListSet<Integer>();
+		Set<Integer> s1 = new ListSet<>();
+		Set<Integer> s2 = new ListSet<>();
 		Set<Integer> s3;
-		Set<Integer> s4 = new ListSet<Integer>();
+		Set<Integer> s4 = new ListSet<>();
 		Set<Integer> s5;
 		Set<Integer> s6;
-		Set<Integer> s7 = new ListSet<Integer>();
+		Set<Integer> s7 = new ListSet<>();
 		Set<Integer> s8;
 
 		Integer[] nums1 = {1,2,3,4,5};
@@ -132,9 +132,9 @@ public class TestListSet {
 
 	@Test
 	public void testIntersection() {
-		Set<Integer> s1 = new ListSet<Integer>();
-		Set<Integer> s2 = new ListSet<Integer>();
-		Set<Integer> s3 = new ListSet<Integer>();
+		Set<Integer> s1 = new ListSet<>();
+		Set<Integer> s2 = new ListSet<>();
+		Set<Integer> s3 = new ListSet<>();
 
 		Integer[] nums1 = {1,2,3,4,5};
 		Integer[] nums2 = {10,2,3,15};
@@ -156,9 +156,9 @@ public class TestListSet {
 
 	@Test
 	public void testDifference() {
-		Set<Integer> s1 = new ListSet<Integer>();
-		Set<Integer> s2 = new ListSet<Integer>();
-		Set<Integer> s3 = new ListSet<Integer>();
+		Set<Integer> s1 = new ListSet<>();
+		Set<Integer> s2 = new ListSet<>();
+		Set<Integer> s3 = new ListSet<>();
 
 		Integer[] nums1 = {1,2,3,4,5};
 		Integer[] nums2 = {10,2,3,15};
