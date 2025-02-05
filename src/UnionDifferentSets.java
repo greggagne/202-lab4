@@ -2,7 +2,6 @@
  * This program demonstrates abstraction by performing a 
  * union of two different sets that are implemented differently.
  */
-import java.util.Iterator;
 
 public class UnionDifferentSets {
 
